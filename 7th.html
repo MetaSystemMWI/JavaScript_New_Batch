@@ -7,21 +7,41 @@
 </head>
 <body>
     <script>
-        // let x = "He\nl\rlo \"a\tsli\" W\vor\fld\bd";
-        // let legn = x.length;
-        // document.write(legn);
+        // let x = "Hello \t Ali My \n Brother\br";
+        // // let y = x.length;
+        // alert(x);
         // document.write(x);
-        // let x = "Ali";
-        // let y = new String("Ali");
-        // let z = (x===y);
-        // alert(z);
+        // // alert(y);
 
         // length, slice, substring, substr, replace, replaceall, touppercase, tolowercase,
         // concate, trim,trimstart, trimend, padStart, padend, chartat, charcodeat, split
 
-        let t = "Apple, banana, mango";
-        let p = t.slice(7,13);
-        alert(p);
+
+        // let t = "Apple, Banana, Mango";
+
+        // // let x = t.slice(7,13);
+        // // let x = t.slice(7);
+        // // let x = t.slice(-12, -6);
+        // // let x = t.substring(7,13);
+        // let x = t.substr(7,9);
+        // alert(x);
+
+
+
+        // indexof, lastindexof, search, match, matchall, includes: TRUE, FALSE, 
+        // startwithd: TRUE, FALSE, endswith: TRUE/FALSE
+
+
+        let t = "Please locate where 'locate' occurs locate";
+        // let index = t.indexOf("locate");
+        // let index = t.search("locate");
+        let index = t.match(/LOCATE/gi);
+        alert(index);
+
+
+
+
+        
     </script>
 </body>
 </html>
