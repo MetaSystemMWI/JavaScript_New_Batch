@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // back tics syntax
+        // ""    ``
+
+        // let x = `Hello 
+        //         "ali" 
+        //         World`;
+
+        // let firstname = "Ali";
+        // let lastName = "Ahmed";
+        // let fullname = `Welcome ${firstname}, ${lastName}`;
+
+        // let price = 10;
+        // let vat = 0.25;
+        // let t = `Total: ${(price * (1 + vat))}`;
+
+        // document.write(t);
+        // alert(x);
+
+
+        // <ul>
+        //     <li></li>
+        //     <li></li>
+        //     <li></li>
+        //     <li></li>
+        // </ul>            
+
+        let header = "Meta Sysem Mianwali Courses";
+
+        let tags = ["HTML","CSS","Adv CSS", "JavaScript","ReactJS","PHP"];
+
+        let html = `<h2>${header}</h2><ul>`;
+
+            for(const x of tags){
+                html +=`<li>${x}</li>`;
+            }
+            html +=`</ul>`;
+
+            document.write(html);
+
+    </script>
+</body>
+</html>
