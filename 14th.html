@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- yes/no
+    no/yes
+    false/true -->
+    <!-- ==, > < -->
+<!-- ==, ===, !=,!==, >,<,>=,<=, &&,||, !, ?,  -->
+    <p id="demo"></p>
+    <script>
+        // let a = Boolean(10<4);
+        // document.write(a);
+
+        // nullish
+
+        // let n = null;
+        // let t = "missing";
+        // let r = n ?? t ;
+
+        // optional chaing ?.
+    //     const car ={type:"car",model:"2023",color:"white"};
+
+    //    document.getElementById("demo").innerHTML =car?.type;
+    //    document.getElementById("demo").innerHTML =car?.model;
+    //    document.getElementById("demo").innerHTML =car?.color;
+
+
+    // let a = 17;
+    // let b = 40;
+    // if(a>18)
+    //     document.write("Contragts");
+    // else if(b<20) 
+    //     document.write("No Entry");
+    // else
+    //     document.write("world card entery");
+
+
+    // switch(){
+    //     case 1:
+    //         statement;
+    //         break;
+    // }
+        let day = "";
+    switch(new Date().getDay()){
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+            break;
+        default:
+                document.write("invalid Days Enter");
+    }
+    document.getElementById("demo").innerHTML=day;
+    </script>
+
+
+        <!-- a-z vowels 
+        A-Z vowels -->
+
+</body>
+</html>     
