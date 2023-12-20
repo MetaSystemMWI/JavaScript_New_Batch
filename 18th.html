@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Keyword, reserved word -->
+    <!-- if, for, while,  -->
+    <!-- let const var -->
+    <!-- 2009, ES5, 
+    2015 ES6, Echma Series
+    2016
+    2017
+    2018
+    2019
+    2020
+    2021/2022
+    IE/Edge -->
+<p id="demo"></p>
+    <script>
+    //     function person (first, last, age, eye){
+    //         this.firstname = first;
+    //         this.sonName="Ali";
+    //         this.lastname = last;
+    //         this.age= age;
+    //         this.eyeColor =eye;
+    //         this.nationality="Pakistan";
+    //     }
+    //     person.prototype.language="Urdu";
+    //     person.prototype.DualNzationality="India";
+    //     const myFather = new person("Fateh","Muhammad",50,"Blue");
+    //     document.getElementById("demo").innerHTML="My Father is "+ myFather.nationality + "."
+    //   + "My Father also 2nd  is "+ myFather.DualNzationality+ ".";
+
+
+    //   new String(),
+    //   new Number(),
+    //   new Boolean(),
+    //   new Object(),
+    //   new Array(),
+    //   new RegExp(),
+    //   new Function(),
+    //   new Date()
+
+// iterable
+    function myNumber(){
+        let n = 0;
+        return {
+            next: function(){
+                n=n+10;
+                return {value:n,done:false};
+            }
+        };
+    }
+    const n = myNumber();
+    n.next();
+    n.next();
+    n.next();
+    n.next();
+    n.next();
+    document.getElementById("demo").innerHTML=n.next().value;
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // const l = new Set(["a","b","c","f"]);
+        // l.add("g");
+        // let t = "";
+        // l.forEach(function(value){
+        //     t = t+value;
+        // })
+        // document.write(l.size);
+        //     for(const x of l.values()){
+        //         t = t+x;
+        //     }
+        // document.write(t);
+        // document.getElementById("demo").innerHTML=t;
+        // document.getElementById("demo").innerHTML=l.keys();
+        // document.getElementById("demo").innerHTML=l.enteries();
+
+        // const book = new Map([
+        //     ["English",200],
+        //     ["Urdu",300]
+        // ]);
+        // book.set("Pak",400);
+        // document.getElementById("demo").innerHTML=book.get("Pak");
+        // document.getElementById("demo").innerHTML=book.size;
+        // document.getElementById("demo").innerHTML=book.delete("Pak");
+        // document.getElementById("demo").innerHTML=book.size;
+        // document.getElementById("demo").innerHTML=book.clear();
+        // document.getElementById("demo").innerHTML=book.size;
+        // book.set("Pak",400);
+        // document.getElementById("demo").innerHTML=book.has("Pak");
+        // document.getElementById("demo").innerHTML=book.size;
+
+
+        const p = {
+            FirstName:"Ali",
+            LastName:"Ahmed",
+            Language:"EN"
+        };
+        // Object.defineProperty(p,"Language",{value:"NO"})
+        Object.defineProperty(p, "year",{value:"2008"});
+        document.getElementById("demo").innerHTML=p.year;
+    </script>
+</body>
+</html>
