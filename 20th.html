@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // function myFunction(a,b){
+        //     return a*b;
+        // } // defination of function
+
+        // const x = function(a,b){  return a*b;}  // function exprssions
+
+        // const myFunction = new Function("a","b","retrun a*b");
+        // let y = myFunction(4,5); // function constructor
+
+        // // function hoisting
+        // myFunction(5); //decleare
+        // function myFunction(y){
+        //     return y*y; // calling
+        // }
+
+        // // self invoking functions
+        // (function(){
+        //     let x = "Hello";  //invoke myself anoymous 
+        // }) ();
+
+        // // object function
+
+        // function myFunction(a,b){
+        //     return arguments.length;
+        // } 
+
+
+        // // arrow function
+
+        // const z = (x,y)=>x*y; 
+
+
+        // function  with parameters
+        // function myFunction(x,y){
+        //     if(y==undefined){
+        //         y=5;
+        //     }
+        //     return x*y;
+        // }
+        // document.write(myFunction(5));
+
+        // default parametes
+        // function myFunction(x,y=10){
+        //     return x+y;
+        // }
+        // document.write(myFunction(5));
+
+        // rest parameters
+
+        // function myFunction(...args){
+        //     let myFunction=0;
+        //     for(let arg of args)
+        //     myFunction=myFunction+arg;
+        //     return myFunction;
+        // }
+        // let x = myFunction(4,9,15,24,39,100,55,77,676,9569850);
+        // document.write(x);
+        // arguments object function
+
+        function finMax(){
+            let max = -Infinity;
+            for(let i =0; i<arguments.length; i++){
+                if(arguments[i] > max){
+                    max = arguments[i];
+                }    
+            }
+            return max;
+        }
+       document.getElementById("demo").innerHTML=finMax(50,40,120);
+</script> 
+</body>
+</html>
