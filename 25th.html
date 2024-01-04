@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        #container{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: red;
+        }
+        #animate{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: yellow;
+        }
+    </style> -->
+</head>
+<body onload="checkcookies()">
+    <!-- <p><button onclick="myMove()">Start</button></p>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+    
+    <script>
+        function myMove(){
+            let id= null;
+            const elem = document.getElementById("animate");
+            let pos = 0;
+            clearInterval(id);
+            id= setInterval(frame, 5);
+            function frame(){
+                if(pos == 350){
+                    clearInterval(id);
+                }else{
+                    pos++;
+                    elem.style.top=pos+"px";
+                    elem.style.left=pos+"px";
+                }
+            }
+        }
+    </script> -->
+
+
+    <!-- <h2 onclick="this.innerHTML='Hello World in JS'">Click on this text</h2> -->
+
+
+    <!-- <h2 onclick="changetext(this)">Click on this text</h2> -->
+    <!-- <button onclick="dispalydate()">Time</button> -->
+    <!-- <script>
+        // function changetext(id){
+        //     id.innerHTML="Hello world in js programming";
+        // }
+
+        // function dispalydate(){
+        //     document.getElementById("demo").innerHTML=Date();
+        // }
+    </script> -->
+    <!-- <p id="demo"></p>
+
+
+    <script>
+        function checkcookies(){
+            let text = "";
+            if(navigator.cookieEnabled == true){
+                text = "Cookies are enabled";
+            }else{
+                text = "Cookies are not enabled";
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+      
+    </script> -->
+
+
+    <input type="text" id="fname" oninput="upperCase()">
+    <script>
+        function upperCase(){
+            const x = document.getElementById("fname");
+            x.value= x.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>
